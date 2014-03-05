@@ -13,11 +13,13 @@ def create_scales(height):
     #创建三个空的画布，高度有传进来的参数决定
     for x in range(640):
         c = int((x/640.)*255.)
-	#
+	#为啥要这样循环？
         red = (c, 0, 0)
         green = (0, c, 0)
         blue = (0, 0, c)
         line_rect = Rect(x, 0, 1, height)
+		#rect(Surface, color, Rect, width=0) -> Rect
+		#Draws a rectangular shape on the Surface.
         pygame.draw.rect(red_scale_surface, red, line_rect)
         pygame.draw.rect(green_scale_surface, green, line_rect)
         pygame.draw.rect(blue_scale_surface, blue, line_rect)
