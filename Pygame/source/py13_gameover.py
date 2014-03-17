@@ -14,6 +14,8 @@ pygame.display.set_caption("The Part of Game.")
 #make a Font object
 game_font = pygame.font.SysFont("",46)
 
+#the say goodbye str
+
 #turn the font to Surface Object
 font_surface = game_font.render("Game Over!",True,(0,0,0))
 
